@@ -14,7 +14,7 @@ setup(
     long_description=__doc__,
     install_requires=[
         str(install_req.req)
-        for install_req in parse_requirements('requirements.txt')
+        for install_req in parse_requirements('requirements.txt',session=False)
     ],
     classifiers=[
         "Development Status :: 3 - Alpha",
